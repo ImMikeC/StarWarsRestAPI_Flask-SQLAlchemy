@@ -3,7 +3,7 @@ services:
   mysql:
     platform: linux/x86-64
     image: 'mysql:latest'
-    restart: always
+    restart: never
     volumes:
     - './mysql_data:/var/lib/mysql'
     environment:
